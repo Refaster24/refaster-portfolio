@@ -22,10 +22,6 @@ h2{
     -o-border-radius: 5px;
 }
 
-a{
-    cursor: pointer;
-}
-
 section:not(.welcome){
     margin-block: 5em;
     margin-inline: 4em;
