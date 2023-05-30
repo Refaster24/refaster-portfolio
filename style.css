@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #191919;
+    font-family: 'space grotesk';
+    color: white;
+}
+
+h2{
+    width: fit-content;
+    font-size: 3em;
+    border-bottom: 5px #02f315 solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+a{
+    cursor: pointer;
+}
+
+section:not(.welcome){
+    margin-block: 5em;
+    margin-inline: 4em;
+    border-top: 4px solid gray;
+}
+
+::selection{
+    background-color: #fff;
+    color: #191919;
+}
+
+:focus-visible{
+    outline: 1px #fff solid;
+}
+
+/* header start */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 4em;
+    margin-bottom: 1em;
+}
+
+header > p{font-size: 2em;text-align: center;}
+
+ul{
+    display: flex;
+    padding: 0;
+    gap: 2em;
+}
+
+ul li{
+    display: inline-block;
+}
+
+svg{
+    transition: outline-color 200ms linear;
+    -webkit-transition: outline-color 200ms linear;
+    -moz-transition: outline-color 200ms linear;
+    -ms-transition: outline-color 200ms linear;
+    -o-transition: outline-color 200ms linear;
+    outline: 0px #191919 solid;
+    outline-offset: 5px;
+}
+
+svg:hover{
+    outline-color: white;
+    outline-width: 1px;
+}
+
+/* header end */
+
+/* section one (welcome) start */
+.welcome{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome img{
+    width: 25em;
+    position: absolute;
+    z-index: -1;
+    right: 5em;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.welcome div{
+    flex-basis: 70%;
+    padding-inline: 4em;
+    background-image: url(./assets/images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: -6em 0;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h1 span{
+    border-bottom: 5px #02f315 solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.welcome p{
+    color: rgba(214, 214, 214, 0.897);
+    max-width: 21em;
+    margin-bottom: 2em;
+    padding-right: 1em;
+}
+
+.welcome a{
+    color: #191919;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.welcome button{
+    background-color: #02f315;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+/* section one (welcome) end */
+
+/* section two (skills) start */
+
+.certificates div,
+.skills div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2em;
+}
+
+.skills h3{
+    font-size: 2em;
+}
+/* section two (skills) end */
+
+
+/* section three (certificates) start */
+.projects span,
+.certificates p:first-of-type{
+    color: #02f315;
+    font-size: 1.5em;
+}
+.projects span a,
+p a{
+    color: #02f315;
+    text-transform:uppercase;
+    font-weight: 900;
+}
+
+.certificates p:last-of-type{
+    margin-block: 1.5em;
+    color: rgb(244, 247, 63);
+    text-decoration: underline;
+}
+
+.certificates div{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: center;
+    gap: 5%;
+}
+
+.certificates img{
+    width: 100%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* section three (certificates) end */
+
+/* section four (projects) start */
+.projects h3{
+    font-size: 2em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    gap: 1.5em;
+    justify-content: space-between;
+}
+.projects a:not(.projects >span a){
+    text-decoration: none;
+}
+/* .project is div */
+.project{
+    background: #272626;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.project img{
+    width: 100%;
+    height: 16em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.project div{
+    padding: 10px 12px;
+    height: 12em;
+}
+.project h4{
+    margin-top: 0;
+    color: white;
+    font-size: 1.3em;
+}
+.project p{
+    color: rgb(219, 218, 218);
+}
+
+/* full stack */
+.project span{
+    display: block;
+    margin-bottom: 2px;
+    color: #02f315;
+    font-size: inherit;
+}
+/* section four (projects) end */
+
+/* footer start */
+footer{
+    background-color: #272626;
+    padding: 2em 4em;
+}
+footer div:first-of-type p{
+    max-width: 21em;
+    margin-bottom: 2em;
+}
+footer div:nth-of-type(2) ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer div:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+    margin-top: 2em;
+}
+footer div:last-of-type p{
+    font-size: 2em;
+}
+footer li{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+@media screen and (max-width:1009px){
+    section:not(.welcome){
+        margin-inline: 2em;
+    }
+    .welcome img{
+        width: 24em;
+        right: 0;
+    }
+    .welcome div{
+        padding-top: 2em;
+        padding-left: 1em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .certificates,
+    .skills{
+        margin-inline: 1em;
+    }
+    .certificates div{
+        grid-template-columns: repeat(3,30%);
+    }
+    .grid{
+        grid-template-columns: repeat(2,45%);
+    }
+}
+
+@media screen and (max-width:735px) {
+    header{
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+    }
+    section:not(.welcome){
+        margin-inline: 1.5em;
+    }
+
+    .welcome{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./assets/images/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position: -6em 2em;
+    }
+    .welcome img{
+        width: 80%;
+        position: relative;
+        z-index: 0;
+    }
+    .welcome div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: none;
+        padding-inline: 0.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .welcome p{
+        margin-right: 0;
+    }
+
+    .skills div{
+        gap: 0;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills h3{
+        font-size: 1.5em;
+    }
+    .grid,
+    .certificates div{
+        justify-content: center;
+        grid-template-columns: repeat(1,80%);
+    }
+    .projects span,
+    .certificates p:first-of-type{
+        font-size: 1em;
+    }
+    .project h4{
+        font-size: 1.2em;
+    }
+    footer div:last-of-type{
+        flex-direction: column;
+        align-items: center;
+    }
+}
